@@ -52,6 +52,7 @@ vnoremap / /\v
 
 "-------Mappings---------"
 nmap <Leader>ev :tabedit $MYVIMRC<cr>
+nmap <Leader>ep :tabedit $MYVIMRC/../plugins.vim<cr>
 nmap <Leader>1 :NERDTreeToggle<cr>
 
 " Fine a tag
@@ -61,4 +62,3 @@ nmap <Leader>f :tag<space>
 inoremap {<cr> {<cr>}<c-o><s-o>
 inoremap [<cr> [<cr>]<c-o><s-o>
 inoremap (<cr> C<cr>)<c-o><s-o>
-
