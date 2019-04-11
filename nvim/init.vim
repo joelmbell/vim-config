@@ -1,6 +1,10 @@
 so ~/.config/nvim/plugins.vim
 
 syntax on
+
+set hidden
+set wildmenu
+set showcmd
 set backspace=indent,eol,start
 let mapleader = ","
 set number
@@ -48,7 +52,7 @@ set gdefault
 set showmatch
 nnoremap / /\v
 vnoremap / /\v
-
+nnoremap <Leader><space> :noh<cr>
 
 "-------Mappings---------"
 nmap <Leader>ev :tabedit $MYVIMRC<cr>
