@@ -7,6 +7,7 @@ set wildmenu
 set showcmd
 set backspace=indent,eol,start
 let mapleader = ","
+let maplocalleader = ","
 set number
 set noswapfile
 set noerrorbells visualbell t_vb=
@@ -66,3 +67,13 @@ nmap <Leader>f :tag<space>
 inoremap {<cr> {<cr>}<c-o><s-o>
 inoremap [<cr> [<cr>]<c-o><s-o>
 inoremap (<cr> C<cr>)<c-o><s-o>
+
+" Org Mode
+let g:org_todo_keywords=['TODO(t)', 'IN-PROGRESS(i)', 'WAITING(w)', '|', 'DONE(d)']
+let g:org_todo_keyword_faces=[
+            \ ['TODO',          [':foreground white',   ':background none']],
+            \ ['IN-PROGRESS',   [':foreground yellow',  ':background none']],
+            \ ['WAITING',       [':foreground red',     ':background none']],
+            \ ['DONE',          [':foreground gray',    ':background none']]]
+let g:org_heading_shade_leading_stars = 1
+let g:org_indent = 1
